@@ -1,5 +1,102 @@
-<section></section>
-<section></section>
-<section></section>
-<section></section>
-<section></section>
+<section class="bg-crumpled-paper bg-white bg-cover -my-24">
+  <div class="max-w-6xl mx-auto flex">
+    <div class="my-32 w-full">
+      <p-carousel [value]="carouselIndex" [circular]="true" [numVisible]="1" [numScroll]="1" autoPlayInterval="1000"
+        styleClass="max-h-[600px]" [showIndicators]="false">
+        <ng-template let-carousel pTemplate="item">
+          @if (carousel==0) {
+          <div class="h-[600px] w-full">
+            <div class="relative flex flex-col md:flex-row items-center h-full">
+              <div class="w-full md:w-1/2 font-gleglo-bold text-5xl/tight xl:text-6xl/tight text-center">
+                <div>Reinforces</div>
+                <div>the learned</div>
+                <div class="flex justify-center">
+                  <div>in</div>
+                  <div class="px-4 -mt-6">
+                    <span class="font-nanumpen text-skyblue-600 text-9xl">class</span>
+                  </div>
+                </div>
+              </div>
+              <img src="assets/carousel-img-1.png" class="absolute top-1/2 right-0 -translate-y-1/2 z-10 h-full" />
+            </div>
+          </div>
+          } @else {
+          <div class="h-[600px] w-full">
+            <div class="relative flex flex-col md:flex-row items-center h-full overflow-visible">
+              <div class="w-full md:w-1/2 font-gleglo-bold text-5xl/tight xl:text-6xl/tight text-center">
+                <div class="text-5xl/tight -mb-8">
+                  <span class="font-nanumpen text-skyblue-600 px-4 text-8.5xl/tight">Enhance</span>your
+                </div>
+                <div>skills with</div>
+                <div class="text-5xl/tight">our technical</div>
+                <div>courses</div>
+              </div>
+              <img src="assets/carousel-img-2.png" class="absolute top-1/2 right-0 -translate-y-1/2 z-10 h-full" />
+            </div>
+          </div>
+          }
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</section>
+
+<app-divider skew="right" [wave]="true" topBackground="bg-crumpled-paper bg-white bg-cover"
+  bottomBackground="bg-skyblue-600" />
+
+<section class="-my-12 bg-skyblue-600 flex items-center">
+  <div class="max-w-6xl mx-auto flex">
+    <div class="bg-clip-paper bg-100% my-24 max-w-4xl max-h-[515px] flex flex-row-reverse items-center relative">
+      <img src="assets/cloud-girl.png" class="absolute top-[57%] left-[-7%] -translate-y-1/2 h-[105%]" />
+      <div class="w-4/6 pl-8 pr-6 md:px-16 text-center leading-none flex flex-col items-center justify-center"
+        style="height: 515px">
+        <div class="font-nanumpen text-skyblue-600 text-8.25xl tracking-tighter mt-4">
+          Welcome!
+        </div>
+        <div class="font-gleglo-bold text-skyblue-600 text-xl md:text-3xl lg:text-4xl mb-2">
+          Virtual Syllabus Tecsup
+        </div>
+        <div class="font-gleglo text-gray-800 text-sm/loose md:text-base/loose lg:text-lg/loose font-bold mb-4">
+          A place designed for you to consolidate the mathematics and physics
+          courses learned at your school
+        </div>
+        <div
+          class="font-nanumpen text-white bg-skyblue-600 inline-block text-5xl px-4 md:px-16 cursor-pointer opacity-100 hover:opacity-80 transition-opacity duration-300 ease-in-out rounded">
+          See Courses
+        </div>
+      </div>
+
+      <img src="assets/white-spin-arrow.png" class="absolute -left-24 bottom-0 h-16" />
+      <img src="assets/white-cloud.png" class="absolute -right-24 top-0 h-14" />
+    </div>
+  </div>
+</section>
+
+<app-divider skew="right" [wave]="true" topBackground="bg-skyblue-600" bottomBackground="bg-skyblue-100" />
+
+<section class="-my-12 bg-skyblue-100">
+  <div class="max-w-6xl mx-auto py-28 flex flex-col text-center leading-none">
+    <div class="font-gleglo-bold text-3xl xl:text-4.5xl mb-4">
+      <div>¿Who can</div>
+      <div>enter Virtual Syllabus?</div>
+    </div>
+    <div class="mx-auto w-full h-[460px] flex flex-row-reverse items-center relative">
+      <img src="assets/laptop-web.png" class="absolute top-1/2 left-0 h-full -translate-y-1/2" />
+      <div class="w-1/2 font-gleglo-bold text-2xl/tight xl:text-3xl/tight text-gray-800">
+        <div>If you are in Middle or High</div>
+        <div>School, you can enter and</div>
+        <div>reinforce with our learning.</div>
+      </div>
+
+      <img src="assets/black-3d-arrow.png" class="absolute top-12 right-0 h-16" />
+      <img src="assets/black-spin-arrow.png" class="absolute top-20 right-52 h-12" />
+      <img src="assets/black-star.png" class="absolute -left-14 -bottom-5 h-12" />
+      <img src="assets/blue-star.png" class="absolute top-24 right-[450px] h-12" />
+      <img src="assets/check-3d-blue.png" class="absolute right-24 bottom-7 h-20" />
+    </div>
+  </div>
+</section>
+
+<section>Section 4</section>
+
+<section>Section 5</section>

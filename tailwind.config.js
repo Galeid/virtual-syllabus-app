@@ -3,8 +3,28 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      fontSize: {
+        '8.5xl': ['7rem', {
+          lineHeight: '1',
+        }],
+        '8.25xl': ['6.5rem', {
+          lineHeight: '1',
+        }],
+        '4.5xl': ['2.625rem', {
+          lineHeight: '1',
+        }],
+      },
+      fontFamily: {
+        'nanumpen': 'NanumPem-Regular',
+        'gleglo': 'Glegoo',
+        'gleglo-bold': 'Glegoo-Bold',
+      },
       backgroundImage: {
         'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
+        'clip-paper': 'url(\'/assets/clip-paper.png\')',
+      },
+      backgroundSize: {
+        '100%': '100% 100%',
       },
       borderRadius: {
         '4xl': '2rem',
