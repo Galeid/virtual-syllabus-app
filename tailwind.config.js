@@ -18,10 +18,12 @@ module.exports = {
         'nanumpen': 'NanumPem-Regular',
         'gleglo': 'Glegoo',
         'gleglo-bold': 'Glegoo-Bold',
+        'gilroy-extrabold': 'Gilroy-ExtraBold',
       },
       backgroundImage: {
         'crumpled-paper': 'url(\'/assets/crumpled-paper.png\')',
         'clip-paper': 'url(\'/assets/clip-paper.png\')',
+        'piece-paper': 'url(\'/assets/piece-paper.png\')',
       },
       backgroundSize: {
         '100%': '100% 100%',
